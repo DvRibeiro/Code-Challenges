@@ -3,17 +3,17 @@ resultado = " "
 loop do
     puts resultado
     puts "   ______________________________________________"
-    puts "  |Seja bem vindo a calculadora de otário!       |"
-    puts "  |Seleciona o que deseja fazer:                 |"
-    puts "  |1- Calcular o resultado de uma operação básica|"
-    puts "  |2- Resolver uma equação quadrática            |"
+    puts "  |Welcome to my calculator!                     |"
+    puts "  |Select one option:                            |"
+    puts "  |1- Calculate a basic operation                |"
+    puts "  |2- Solve a quadratic equation                 |"
     puts "  |0- Sair                                       |"
     puts " "
-    print " Sua opção: "
+    print " Your option: "
     option = gets.chomp.to_i
 
     if option == 1
-        puts "Digite a operação que deseja realizar: "
+        puts "Type the operation you wanna do: "
         operation = gets.chomp.split    
         
     num1 = operation[0].to_f
@@ -31,10 +31,10 @@ loop do
             when "/"
             result = (num1 / num2)
             end 
-            resultado = "O resultado é #{result}"
+            resultado = "The result is #{result}"
     
     elsif option == 2
-        puts "Digite a sua equação: "
+        puts "Type your equation: "
         print "a= "
         a = gets.chomp.to_f
         print "b= "
@@ -45,13 +45,13 @@ loop do
         delta = ((b * b) - 4 * a * c)
         
         if(delta < 0)
-            print "Não existem raízes reais"
+            print "Do not exist real roots."
         else 
             x1 = (-b + Math.sqrt(delta)) / (2*a)
             x2 = (-b - Math.sqrt(delta)) / (2*a)
             result = x1 , x2 
         end
-        resultado = "O resultado é S = #{result}"
+        resultado = "The result is S = #{result}"
     else
         break
     end
