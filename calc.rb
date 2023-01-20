@@ -7,7 +7,7 @@ loop do
     puts "  |Select one option:                            |"
     puts "  |1- Calculate a basic operation                |"
     puts "  |2- Solve a quadratic equation                 |"
-    puts "  |0- Sair                                       |"
+    puts "  |0- Exit                                       |"
     puts " "
     print " Your option: "
     option = gets.chomp.to_i
