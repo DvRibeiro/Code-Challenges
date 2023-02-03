@@ -1,40 +1,43 @@
-#aulas = {'Aula 1 ' => 'liberada', 'Aula 2 ' =>  'liberada', 'Aula 3 ' => 'liberada', 'Aula 4 ' => 'liberada', 'Aula 5 ' =>  'em breve'}
- 
-#aulas.each do |key, value|
-# puts "#{key} #{value}"
-#end
-
 array = [1, 2, 3, 4]
-puts "   _____________________________________________________________"
-puts "  |Seleciona o que deseja fazer:                                |"
-puts "  |1- Multiplicar cada objeto por 2 sem alterar o array original|"
-puts "  |2- Multiplicar cada objeto por 2 alterarando o array original|"
 
-print ": "
-option = gets.chomp.to_i
+loop do
+    puts "   _____________________________________________________________"
+    puts "  |                   Choose one option:                        |"
+    puts "  |1- Multiply the array by two without changing the original   |"
+    puts "  |2- Multiply the array by two changing the original           |"
 
-if option == 1
-    puts "\n Multiplicando cada objeto por 2 sem alterar array original kk"
+    print " Your option: "
+    option = gets.chomp.to_i
 
-    new_array = array.map do |x|
+    if option == 1
+        puts "\n Multiplying each object and creating a new array with the results."
+
+        new_array = array.map do |x|
         x * 2
-    end
+        end
 
-    puts "\n Array original" 
-    puts " #{array}"
+        puts "\n Original Array " 
+        puts " #{array}"
 
-    puts "\n Novo array"
-    puts " #{new_array}"
+        puts "\n New array"
+        puts " #{new_array}"
 
 
-else option == 2
-    new_array = array.map! do |x|
+    elsif option == 2
+        puts "\n Multiplying each object and changing the results in the original array."
+    
+        new_array = array.map! do |x|
         x * 2
+        end
+
+        puts "\n Original Array (changed by using the 'map!' command insted of just 'map')" 
+        puts " #{array}"
+
+        puts "\n New array"
+        puts " #{new_array}"
+    else 
+        break
     end
+    system ("cls")
 
-    puts "\n Array original (alterado por conta do 'map!')" 
-    puts " #{array}"
-
-    puts "\n Novo array"
-    puts " #{new_array}"
 end
