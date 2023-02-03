@@ -1,3 +1,4 @@
+#multiply an array by 2 using two different methods.
 array = [1, 2, 3, 4]
 
 loop do
