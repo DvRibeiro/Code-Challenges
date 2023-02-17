@@ -1,2 +1,2 @@
-# Ruby Challenges
-small ruby code challenges that i tried to solve
+# Code Challenges
+small code challenges that i tried to solve
