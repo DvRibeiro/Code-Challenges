@@ -1,3 +1,4 @@
+//Faça um programa que leia quatro números informados pelo usuário e que depois determine e escreva a média ponderada com os pesos 1,2,3 e 4.
 package _01;
 import java.util.Scanner;
 
