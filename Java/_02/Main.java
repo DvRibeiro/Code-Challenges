@@ -1,3 +1,5 @@
+//Faça  um  programa  que  receba  o  valor  de  um depósito  bancário  e  o  valor  da  taxa  de  juros.
+//Calcule e escreva o valor do rendimento e o valor total depois do rendimento.
 package _02;
 import java.util.Scanner;
 
