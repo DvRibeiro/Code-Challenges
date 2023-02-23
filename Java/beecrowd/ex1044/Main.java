@@ -1,3 +1,9 @@
+//Read two nteger values (A and B). After, the program should print the message "Sao Multiplos" (are multiples) or 
+//"Nao sao Multiplos" (aren’t multiples), corresponding to the read values.
+
+
+
+
 package ex1044;
 import java.util.Scanner;
 
