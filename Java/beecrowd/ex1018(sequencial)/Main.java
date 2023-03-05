@@ -1,3 +1,8 @@
+//in this problem you have to read an integer value and calculate the smallest possible number of banknotes in which the value may be decomposed. 
+//The possible banknotes are 100, 50, 20, 10, 5, 2 e 1. Print the read value and the list of banknotes.
+//The input file contains an integer value N (0 < N < 1000000).
+//Print the read number and the minimum quantity of each necessary banknotes
+
 package sequencial.ex1018;
 
 import java.util.Scanner;
